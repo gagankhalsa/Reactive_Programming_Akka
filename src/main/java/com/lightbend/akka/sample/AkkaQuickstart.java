@@ -24,8 +24,8 @@ public class AkkaQuickstart {
       //#main-send-messages
       howdyGreeter.tell(new WhoToGreet("Akka"), ActorRef.noSender());
       howdyGreeter.tell(new Greet(), ActorRef.noSender());
-
-      howdyGreeter.tell(new WhoToGreet("Lightbend"), ActorRef.noSender());
+      
+      howdyGreeter.tell(new WhoToGreet("Gaganjot"), ActorRef.noSender());
       howdyGreeter.tell(new Greet(), ActorRef.noSender());
 
       helloGreeter.tell(new WhoToGreet("Java"), ActorRef.noSender());
@@ -33,6 +33,9 @@ public class AkkaQuickstart {
 
       goodDayGreeter.tell(new WhoToGreet("Play"), ActorRef.noSender());
       goodDayGreeter.tell(new Greet(), ActorRef.noSender());
+      
+      goodDayGreeter.tell(new WhoToGreet("Miss Kaur"),ActorRef.noSender());
+      goodDayGreeter.tell(new Greet(),ActorRef.noSender());
       //#main-send-messages
 
       System.out.println(">>> Press ENTER to exit <<<");
